@@ -1,15 +1,12 @@
-package ClaseDerivada;
+package ClaseDerivada2;
 
 // Método main para comprobar
 public class Main {
     public static void main(String[] args) {
-        // Crear un estudiante
-        Estudiante estudiante = new Estudiante("Juan");
+        // Crear un coche
+        Coche coche = new Coche("Toyota", 4);
 
-        // Llamar al método saludar sin parámetros
-        estudiante.saludar();
-
-        // Llamar al método saludar con el nombre de otra persona
-        estudiante.saludar("Carlos");
+        // Mostrar la información del coche
+        coche.mostrarInformacion();
     }
 }
