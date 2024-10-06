@@ -1,15 +1,15 @@
-package ClaseAbstracta;
+package ClaseDerivada;
 
 // Método main para comprobar
 public class Main {
     public static void main(String[] args) {
-        // Crear un triángulo y un cuadrado
-        Forma triangulo = new Triangulo(5, 3);
-        Forma cuadrado = new Cuadrado(4);
+        // Crear un estudiante
+        Estudiante estudiante = new Estudiante("Juan");
 
-        // Calcular y mostrar el área de cada forma
-        System.out.println("Área del triángulo: " + triangulo.calcularArea());
-        System.out.println("Área del cuadrado: " + cuadrado.calcularArea());
+        // Llamar al método saludar sin parámetros
+        estudiante.saludar();
+
+        // Llamar al método saludar con el nombre de otra persona
+        estudiante.saludar("Carlos");
     }
 }
-
