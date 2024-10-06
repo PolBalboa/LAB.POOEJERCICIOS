@@ -1,12 +1,14 @@
-package ClaseDerivada2;
+package Empleado;
 
-// Método main para comprobar
+// Método main para probar las clases
 public class Main {
     public static void main(String[] args) {
-        // Crear un coche
-        Coche coche = new Coche("Toyota", 4);
+        // Crear un empleado
+        Empleado empleado = new Empleado("Pol Pérez", 3000.0);
+        empleado.mostrarInformacion();
 
-        // Mostrar la información del coche
-        coche.mostrarInformacion();
+        // Crear un gerente
+        Gerente gerente = new Gerente("Anita Tenorio", 5000.0);
+        gerente.mostrarInformacion();
     }
 }
