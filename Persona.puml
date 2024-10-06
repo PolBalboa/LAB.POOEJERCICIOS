@@ -1,0 +1,9 @@
+@startuml
+
+class Saludo {
+    -nombre: String
+    +Saludo(nombre: String)
+    +saludar(): void
+}
+
+@enduml
