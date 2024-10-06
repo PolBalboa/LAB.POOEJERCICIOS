@@ -1,11 +1,18 @@
-package ClaseDerivada2;
+package Vehiculo;
 
-// Clase base Vehiculo
-class Vehiculo {
+public class Vehiculo {
     protected String marca;
+    protected int anioFabricacion;
 
-    // Constructor que inicializa la marca
-    public Vehiculo(String marca) {
+    // Constructor
+    public Vehiculo(String marca, int anioFabricacion) {
         this.marca = marca;
+        this.anioFabricacion = anioFabricacion;
+    }
+
+    // Método para mostrar información del vehículo
+    public void mostrarInformacion() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Año de fabricación: " + anioFabricacion);
     }
 }

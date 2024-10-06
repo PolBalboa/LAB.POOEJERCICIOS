@@ -1,16 +1,16 @@
-package LimiteSobreGiro;
+package Vehiculo;
 
+// Método main para probar las clases
 public class Main {
     public static void main(String[] args) {
-        try {
-            // Crear una cuenta corriente con un saldo inicial y un límite de sobregiro
-            CuentaCorriente cuenta = new CuentaCorriente(1000, 500);
+        // Crear un coche
+        Coche coche = new Coche("Toyota", 2020, 2.0, 4);
+        coche.mostrarInformacion();
 
-            // Intentar retirar una cantidad dentro del saldo y el límite de sobregiro
-            cuenta.retirar(1200); // Esto debería ser exitoso
-            cuenta.retirar(400); // Esto debería lanzar una excepción de sobregiro
-        } catch (LimiteSobregiroExcedidoException e) {
-            System.out.println(e.getMessage());
-        }
+        System.out.println();
+
+        // Crear una motocicleta
+        Motocicleta moto = new Motocicleta("Harley-Davidson", 2019, 1.2, true);
+        moto.mostrarInformacion();
     }
 }
